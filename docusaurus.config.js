@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'React Form',
   tagline: 'React Form is a simple and basic controlled hook form. Aiming to create forms with minimal effort.',
-  url: 'https://resourge-react-form.com',
+  url: 'https://resourge-react-form.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
