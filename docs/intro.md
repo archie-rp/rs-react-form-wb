@@ -2,46 +2,93 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Quick Start
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Quick Start creating forms with react-form.
 
-## Getting Started
+## Compatible
 
-Get started by **creating a new site**.
+- [React](https://reactjs.com/) — ReactJS
+- [React Native](https://react-native.org/) — React Native for mobile
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Installation
 
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
+- Using Yarn
 
 ```bash
-npm init docusaurus@latest my-website classic
+yarn add @resourge/react-form
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
+- Using npm
 
 ```bash
-cd my-website
-npm run start
+npm install @resourge/react-form --save
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+## Usage
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+```javascript
+const {
+  form, // Form Data
+  touches, isTouched, // Form touches
+  errors, isValid, // Form validation
+  context, // Context
+  triggerChange, reset, merge,
+  handleSubmit, field,
+  onChange, getValue, changeValue,changeValue, 
+  resetTouch,
+  getErrors, setError, hasError, 
+  watch,
+  undo, redo
+} = useForm(formData, formOptions)
+```
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+`useForm` is the hook necessary to create forms. Using formData and formOptions, the hook returns an array containing the form state and the form actions.
+
+### Example
+
+Demonstration of a example of a simple form.
+
+```javascript
+import React, { useState } from 'react';
+import { useForm } from '@resourge/react-form';
+
+export default function Form() {
+  const { 
+    isValid,
+    field, 
+    handleSubmit 
+  } = useForm(
+    { 
+      name: 'Rimuru' 
+    }
+  )
+
+  const onSubmit = handleSubmit((form) => {
+    // Output of form data
+    console.log('Form data', form)
+  })
+
+  return (
+    <form onSubmit={onSubmit}>
+      <input { ...field('name') }/>
+      <span>
+      {
+        isValid ? "Valid" : "Invalid" 
+      } Form
+      </span>
+      <button type="submit">
+        Save
+      </button>
+    </form>
+  );
+}
+```
+
+{{< details "Usage of form tag" >}}
+Usage of form as wrapper is optional.
+{{< /details >}}
+
+## Known Bugs
+
+- Let's us know if any <a href="https://github.com/resourge/react-form/issues">here</a>.

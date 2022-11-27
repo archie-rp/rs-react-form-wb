@@ -10,32 +10,56 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Controlled form',
+    Svg: require('@site/static/img/controlled.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        No need to wrap with Form tag.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Build in Typescript',
+    Svg: require('@site/static/img/build.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Get all the features with autocomplete, error messages, typesafety and more.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Support for classes',
+    Svg: require('@site/static/img/classes.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Possability of <b>classes</b> as default form data.
+      </>
+    ),
+  },
+  {
+    title: 'Validation by schema',
+    Svg: require('@site/static/img/validations.svg').default,
+    description: (
+      <>
+        No native validation. The entire validation is up to the developer.
+      </>
+    ),
+  },
+  {
+    title: 'Compatiblity with 3rd-party UI libraries',
+    Svg: require('@site/static/img/libraries.svg').default,
+    description: (
+      <>
+        Simple to use with existing HTML form inputs and 3rd-party UI libraries.
+      </>
+    ),
+  },
+  {
+    title: 'Support for reactjs and react-native',
+    Svg: require('@site/static/img/web_mobile.svg').default,
+    description: (
+      <>
+        Same library for multiple platforms.
       </>
     ),
   },
