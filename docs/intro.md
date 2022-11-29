@@ -85,9 +85,7 @@ export default function Form() {
 }
 ```
 
-{{< details "Usage of form tag" >}}
-Usage of form as wrapper is optional.
-{{< /details >}}
+Usage of <b>form</b> as wrapper is optional.
 
 ## Known Bugs
 
