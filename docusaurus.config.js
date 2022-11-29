@@ -70,6 +70,12 @@ const config = {
           },
           {
             type: 'doc',
+            position: 'left',
+            docId: 'playground',
+            label: 'Try now'
+          },
+          {
+            type: 'doc',
             position: 'right',
             docId: 'Versions',
             label: 'Versions',
