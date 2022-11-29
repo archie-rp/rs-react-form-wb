@@ -354,7 +354,6 @@ All actions available on `useForm`:
 | ---- | ---- | ------- | ----------- |
 | **form** | `object` | [`formData`](#form-data) | Form data |
 | **errors** | `{ [form path]: [path error messages] }` | undefined | Depends if `useForm` `validate` is set. (ex: { 'user.name': ['Name is required'] }) |
-| **isValid** | `boolean` | false | Form state by default is false if `errors` are undefined or an empty object |
 | **touches** | `{ [form path]: boolean }` | {} | Form touches (ex: { 'user.name': true }) |
 | **isTouched** | `boolean` | false | Form touches state by default is false if `touches` are undefined or an empty object |
 | **context** | `object` | [Form State](#form-state) | Context, mainly for use in `FormProvider` |
