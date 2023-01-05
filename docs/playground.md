@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Playground
 
-Example creation of User.
+Example form to create a user.
 
-[Try out in Sandbox](https://dm3d4f.csb.app/)
+[Try out in Sandbox](https://codesandbox.io/s/resourge-react-form-59g2br)
 
